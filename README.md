@@ -2,6 +2,7 @@
 
 Aplicación web para armar la planilla semanal de turnos del personal de un polideportivo y calcular automáticamente la liquidación de sueldos, con datos compartidos en tiempo real entre varios usuarios.
 
+![Demo](docs/captura-demo.png)
 🔗 **Demo en vivo:** https://polideportivo-demo.vercel.app
 
 > **Credenciales de demo**
@@ -14,7 +15,7 @@ Este sistema nació como un **proyecto real**: lo desarrollé para reemplazar la
 
 Este repositorio es una **versión clonada y modificada** del proyecto original. Para no comprometer la confidencialidad ni exponer información sensible, se reemplazaron:
 
-- el nombre y el logo de la institución (el polideportivo "Costa Verde" y su logo son ficticios),
+- el nombre y el logo de la institución (el polideportivo y su logo son ficticios),
 - los nombres del personal,
 - los valores de hora y de sueldo,
 - el proyecto de Firebase y sus credenciales.
