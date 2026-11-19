@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Planilla Polideportivo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <img src="logo.svg" alt="Polideportivo Costa Verde" class="logo" />
+        <h1>Planilla Polideportivo</h1>
+      </div>
+      <nav id="nav"></nav>
+      <div class="row noprint" style="margin: 0">
+        <span id="st" class="mu"></span><button data-a="logout">Salir</button>
+      </div>
+    </header>
+    <div id="login">
+      <form id="lf" class="card">
+        <img
+          src="logo.svg"
+          alt="Logo Polideportivo Costa Verde"
+          class="logo"
+          style="height: 156px; align-self: center"
+        />
+        <h1 class="login">Planilla de Horarios Temporada 2026 - 2027</h1>
+        <h2>Ingresar usuario y contraseña</h2>
+        <input type="email" id="em" placeholder="Email" required /><input
+          type="password"
+          id="pw"
+          placeholder="Contraseña"
+          required
+        /><button class="pri">Ingresar</button>
+
+        <div
+          class="mu"
+          style="
+            text-align: center;
+            font-size: 13px;
+            background: var(--acb);
+            border-radius: 8px;
+            padding: 10px;
+          "
+        >
+          <b>Podés ingresar y probar el sistema con estas credenciales:</b
+          ><br />
+          Email: demo@polideportivo-demo.com<br />
+          Contraseña: Demo2026!
+        </div>
+        <div id="le" class="mu" style="color: var(--bad)"></div>
+        <div class="mu" style="text-align: center">
+          Desarrollado por <b>Sol Prinzen</b>
+        </div>
+      </form>
+    </div>
+    <main id="app"></main>
+
+    <footer class="noprint">
+      Desarrollado por <b>Sol Prinzen</b> ·
+      <a href="https://github.com/solprinz" target="_blank" rel="noopener"
+        >GitHub</a
+      >
+    </footer>
+
+    <script type="module" src="./src/app.js"></script>
+  </body>
+</html>

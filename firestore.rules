@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Solo estos usuarios (creados a mano en Authentication) pueden leer y escribir.
+    function permitido() {
+  return request.auth != null
+    && request.auth.token.email in [
+      'solprinz@hotmail.com',
+      'demo@polideportivo-demo.com'
+    ];
+}
+    match /{document=**} {
+      allow read, write: if permitido();
+    }
+  }
+}

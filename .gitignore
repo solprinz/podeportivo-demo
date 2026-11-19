@@ -1,0 +1,11 @@
+node_modules
+.vercel
+.env
+.env.*
+*.json.bak
+planilla-poli.json
+
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
